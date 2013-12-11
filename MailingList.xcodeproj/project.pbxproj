@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53F2819C1858EECD002BC688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F2819B1858EECD002BC688 /* Foundation.framework */; };
+		53F2819E1858EECD002BC688 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F2819D1858EECD002BC688 /* CoreGraphics.framework */; };
+		53F281A01858EECE002BC688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F2819F1858EECE002BC688 /* UIKit.framework */; };
+		53F281A61858EECE002BC688 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53F281A41858EECE002BC688 /* InfoPlist.strings */; };
+		53F281A81858EECE002BC688 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F281A71858EECE002BC688 /* main.m */; };
+		53F281AC1858EECE002BC688 /* MLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F281AB1858EECE002BC688 /* MLAppDelegate.m */; };
+		53F281CF1858EFA8002BC688 /* MLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F281CC1858EFA8002BC688 /* MLViewController.m */; };
+		53F281D01858EFA8002BC688 /* MLViewController~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F281CD1858EFA8002BC688 /* MLViewController~iPad.xib */; };
+		53F281D11858EFA8002BC688 /* MLViewController~iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F281CE1858EFA8002BC688 /* MLViewController~iPhone.xib */; };
+		53F282001858F09E002BC688 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F281FF1858F09E002BC688 /* Reachability.m */; };
+		53F2822C185900F4002BC688 /* ChimpKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F2822B185900F4002BC688 /* ChimpKit.m */; };
+		53F2823E18590454002BC688 /* Background~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2822F18590454002BC688 /* Background~iPad.png */; };
+		53F2823F18590454002BC688 /* Background~iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823018590454002BC688 /* Background~iPad@2x.png */; };
+		53F2824018590454002BC688 /* Background~iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823118590454002BC688 /* Background~iPhone.png */; };
+		53F2824118590454002BC688 /* Background~iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823218590454002BC688 /* Background~iPhone@2x.png */; };
+		53F2824218590454002BC688 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823318590454002BC688 /* Icon-57.png */; };
+		53F2824318590454002BC688 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823418590454002BC688 /* Icon-72.png */; };
+		53F2824418590454002BC688 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823518590454002BC688 /* Icon-76.png */; };
+		53F2824518590454002BC688 /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823618590454002BC688 /* Icon-114.png */; };
+		53F2824618590454002BC688 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823718590454002BC688 /* Icon-120.png */; };
+		53F2824718590454002BC688 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823818590454002BC688 /* Icon-144.png */; };
+		53F2824818590454002BC688 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823918590454002BC688 /* Icon-152.png */; };
+		53F2824918590454002BC688 /* Logo~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823A18590454002BC688 /* Logo~iPad.png */; };
+		53F2824A18590454002BC688 /* Logo~iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823B18590454002BC688 /* Logo~iPad@2x.png */; };
+		53F2824B18590454002BC688 /* Logo~iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823C18590454002BC688 /* Logo~iPhone.png */; };
+		53F2824C18590454002BC688 /* Logo~iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F2823D18590454002BC688 /* Logo~iPhone@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5379D49918591F4300E59219 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ChimpKit/README.txt; sourceTree = "<group>"; };
+		5379D49B18591F5900E59219 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = Reachability/README.txt; sourceTree = "<group>"; };
+		53F281981858EECD002BC688 /* MailingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F2819B1858EECD002BC688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53F2819D1858EECD002BC688 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53F2819F1858EECE002BC688 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53F281A31858EECE002BC688 /* MailingList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MailingList-Info.plist"; sourceTree = "<group>"; };
+		53F281A51858EECE002BC688 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53F281A71858EECE002BC688 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53F281A91858EECE002BC688 /* MailingList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailingList-Prefix.pch"; sourceTree = "<group>"; };
+		53F281AA1858EECE002BC688 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDelegate.h; sourceTree = "<group>"; };
+		53F281AB1858EECE002BC688 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDelegate.m; sourceTree = "<group>"; };
+		53F281B41858EECE002BC688 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		53F281CA1858EFA8002BC688 /* MLChimpKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLChimpKitKeys.h; sourceTree = "<group>"; };
+		53F281CB1858EFA8002BC688 /* MLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLViewController.h; sourceTree = "<group>"; };
+		53F281CC1858EFA8002BC688 /* MLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLViewController.m; sourceTree = "<group>"; };
+		53F281CD1858EFA8002BC688 /* MLViewController~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MLViewController~iPad.xib"; sourceTree = "<group>"; };
+		53F281CE1858EFA8002BC688 /* MLViewController~iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MLViewController~iPhone.xib"; sourceTree = "<group>"; };
+		53F281FE1858F09E002BC688 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
+		53F281FF1858F09E002BC688 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
+		53F2822A185900F4002BC688 /* ChimpKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChimpKit.h; path = ChimpKit/ChimpKit.h; sourceTree = "<group>"; };
+		53F2822B185900F4002BC688 /* ChimpKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChimpKit.m; path = ChimpKit/ChimpKit.m; sourceTree = "<group>"; };
+		53F2822F18590454002BC688 /* Background~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background~iPad.png"; path = "Images/Background~iPad.png"; sourceTree = "<group>"; };
+		53F2823018590454002BC688 /* Background~iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background~iPad@2x.png"; path = "Images/Background~iPad@2x.png"; sourceTree = "<group>"; };
+		53F2823118590454002BC688 /* Background~iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background~iPhone.png"; path = "Images/Background~iPhone.png"; sourceTree = "<group>"; };
+		53F2823218590454002BC688 /* Background~iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background~iPhone@2x.png"; path = "Images/Background~iPhone@2x.png"; sourceTree = "<group>"; };
+		53F2823318590454002BC688 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-57.png"; path = "Images/Icon-57.png"; sourceTree = "<group>"; };
+		53F2823418590454002BC688 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Images/Icon-72.png"; sourceTree = "<group>"; };
+		53F2823518590454002BC688 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "Images/Icon-76.png"; sourceTree = "<group>"; };
+		53F2823618590454002BC688 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-114.png"; path = "Images/Icon-114.png"; sourceTree = "<group>"; };
+		53F2823718590454002BC688 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "Images/Icon-120.png"; sourceTree = "<group>"; };
+		53F2823818590454002BC688 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-144.png"; path = "Images/Icon-144.png"; sourceTree = "<group>"; };
+		53F2823918590454002BC688 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-152.png"; path = "Images/Icon-152.png"; sourceTree = "<group>"; };
+		53F2823A18590454002BC688 /* Logo~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo~iPad.png"; path = "Images/Logo~iPad.png"; sourceTree = "<group>"; };
+		53F2823B18590454002BC688 /* Logo~iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo~iPad@2x.png"; path = "Images/Logo~iPad@2x.png"; sourceTree = "<group>"; };
+		53F2823C18590454002BC688 /* Logo~iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo~iPhone.png"; path = "Images/Logo~iPhone.png"; sourceTree = "<group>"; };
+		53F2823D18590454002BC688 /* Logo~iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo~iPhone@2x.png"; path = "Images/Logo~iPhone@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53F281951858EECD002BC688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F2819E1858EECD002BC688 /* CoreGraphics.framework in Frameworks */,
+				53F281A01858EECE002BC688 /* UIKit.framework in Frameworks */,
+				53F2819C1858EECD002BC688 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53F2818F1858EECD002BC688 = {
+			isa = PBXGroup;
+			children = (
+				53F28229185900C7002BC688 /* ChimpKit */,
+				53F282081858F381002BC688 /* Images */,
+				53F281A11858EECE002BC688 /* MailingList */,
+				53F2819A1858EECD002BC688 /* Frameworks */,
+				53F281991858EECD002BC688 /* Products */,
+				53F281FD1858F089002BC688 /* Reachability */,
+			);
+			sourceTree = "<group>";
+		};
+		53F281991858EECD002BC688 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F281981858EECD002BC688 /* MailingList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53F2819A1858EECD002BC688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F2819B1858EECD002BC688 /* Foundation.framework */,
+				53F2819D1858EECD002BC688 /* CoreGraphics.framework */,
+				53F2819F1858EECE002BC688 /* UIKit.framework */,
+				53F281B41858EECE002BC688 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53F281A11858EECE002BC688 /* MailingList */ = {
+			isa = PBXGroup;
+			children = (
+				53F281AA1858EECE002BC688 /* MLAppDelegate.h */,
+				53F281AB1858EECE002BC688 /* MLAppDelegate.m */,
+				53F281CA1858EFA8002BC688 /* MLChimpKitKeys.h */,
+				53F281CB1858EFA8002BC688 /* MLViewController.h */,
+				53F281CC1858EFA8002BC688 /* MLViewController.m */,
+				53F281CD1858EFA8002BC688 /* MLViewController~iPad.xib */,
+				53F281CE1858EFA8002BC688 /* MLViewController~iPhone.xib */,
+				53F281A21858EECE002BC688 /* Supporting Files */,
+			);
+			path = MailingList;
+			sourceTree = "<group>";
+		};
+		53F281A21858EECE002BC688 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53F281A31858EECE002BC688 /* MailingList-Info.plist */,
+				53F281A41858EECE002BC688 /* InfoPlist.strings */,
+				53F281A71858EECE002BC688 /* main.m */,
+				53F281A91858EECE002BC688 /* MailingList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53F281FD1858F089002BC688 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				53F281FE1858F09E002BC688 /* Reachability.h */,
+				53F281FF1858F09E002BC688 /* Reachability.m */,
+				5379D49B18591F5900E59219 /* README.txt */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		53F282081858F381002BC688 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				53F2822F18590454002BC688 /* Background~iPad.png */,
+				53F2823018590454002BC688 /* Background~iPad@2x.png */,
+				53F2823118590454002BC688 /* Background~iPhone.png */,
+				53F2823218590454002BC688 /* Background~iPhone@2x.png */,
+				53F2823318590454002BC688 /* Icon-57.png */,
+				53F2823418590454002BC688 /* Icon-72.png */,
+				53F2823518590454002BC688 /* Icon-76.png */,
+				53F2823618590454002BC688 /* Icon-114.png */,
+				53F2823718590454002BC688 /* Icon-120.png */,
+				53F2823818590454002BC688 /* Icon-144.png */,
+				53F2823918590454002BC688 /* Icon-152.png */,
+				53F2823A18590454002BC688 /* Logo~iPad.png */,
+				53F2823B18590454002BC688 /* Logo~iPad@2x.png */,
+				53F2823C18590454002BC688 /* Logo~iPhone.png */,
+				53F2823D18590454002BC688 /* Logo~iPhone@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		53F28229185900C7002BC688 /* ChimpKit */ = {
+			isa = PBXGroup;
+			children = (
+				53F2822A185900F4002BC688 /* ChimpKit.h */,
+				53F2822B185900F4002BC688 /* ChimpKit.m */,
+				5379D49918591F4300E59219 /* README.txt */,
+			);
+			name = ChimpKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53F281971858EECD002BC688 /* MailingList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F281C41858EECE002BC688 /* Build configuration list for PBXNativeTarget "MailingList" */;
+			buildPhases = (
+				53F281941858EECD002BC688 /* Sources */,
+				53F281951858EECD002BC688 /* Frameworks */,
+				53F281961858EECD002BC688 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailingList;
+			productName = MailingList;
+			productReference = 53F281981858EECD002BC688 /* MailingList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53F281901858EECD002BC688 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ML;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Hermiteer Publishing";
+			};
+			buildConfigurationList = 53F281931858EECD002BC688 /* Build configuration list for PBXProject "MailingList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53F2818F1858EECD002BC688;
+			productRefGroup = 53F281991858EECD002BC688 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53F281971858EECD002BC688 /* MailingList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53F281961858EECD002BC688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F2824718590454002BC688 /* Icon-144.png in Resources */,
+				53F281D01858EFA8002BC688 /* MLViewController~iPad.xib in Resources */,
+				53F2824318590454002BC688 /* Icon-72.png in Resources */,
+				53F281A61858EECE002BC688 /* InfoPlist.strings in Resources */,
+				53F2823E18590454002BC688 /* Background~iPad.png in Resources */,
+				53F2823F18590454002BC688 /* Background~iPad@2x.png in Resources */,
+				53F2824018590454002BC688 /* Background~iPhone.png in Resources */,
+				53F2824418590454002BC688 /* Icon-76.png in Resources */,
+				53F2824518590454002BC688 /* Icon-114.png in Resources */,
+				53F2824618590454002BC688 /* Icon-120.png in Resources */,
+				53F281D11858EFA8002BC688 /* MLViewController~iPhone.xib in Resources */,
+				53F2824118590454002BC688 /* Background~iPhone@2x.png in Resources */,
+				53F2824A18590454002BC688 /* Logo~iPad@2x.png in Resources */,
+				53F2824B18590454002BC688 /* Logo~iPhone.png in Resources */,
+				53F2824918590454002BC688 /* Logo~iPad.png in Resources */,
+				53F2824818590454002BC688 /* Icon-152.png in Resources */,
+				53F2824C18590454002BC688 /* Logo~iPhone@2x.png in Resources */,
+				53F2824218590454002BC688 /* Icon-57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F281941858EECD002BC688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F281A81858EECE002BC688 /* main.m in Sources */,
+				53F281CF1858EFA8002BC688 /* MLViewController.m in Sources */,
+				53F281AC1858EECE002BC688 /* MLAppDelegate.m in Sources */,
+				53F2822C185900F4002BC688 /* ChimpKit.m in Sources */,
+				53F282001858F09E002BC688 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53F281A41858EECE002BC688 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F281A51858EECE002BC688 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53F281C21858EECE002BC688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53F281C31858EECE002BC688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53F281C51858EECE002BC688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailingList/MailingList-Prefix.pch";
+				INFOPLIST_FILE = "MailingList/MailingList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53F281C61858EECE002BC688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailingList/MailingList-Prefix.pch";
+				INFOPLIST_FILE = "MailingList/MailingList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53F281931858EECD002BC688 /* Build configuration list for PBXProject "MailingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F281C21858EECE002BC688 /* Debug */,
+				53F281C31858EECE002BC688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F281C41858EECE002BC688 /* Build configuration list for PBXNativeTarget "MailingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F281C51858EECE002BC688 /* Debug */,
+				53F281C61858EECE002BC688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53F281901858EECD002BC688 /* Project object */;
+}
