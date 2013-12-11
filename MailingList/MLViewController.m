@@ -207,7 +207,6 @@
     NSString* address = self.addresses.lastObject;
 
     // build a request dictionary
-    // this will use the last address in the list
     NSDictionary* params = @{ @"id" : kChimpKitListID,
 							  @"email_address" : address,
 							  @"double_optin" : @"false",
