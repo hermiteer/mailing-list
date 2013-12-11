@@ -198,40 +198,20 @@
     {
         return;
     }
-    /*
-	// HACK HACK HACK
-	// this may not be necessary
-	// just react to the mail chimp timeout instead
-    // make sure there is internet reachability
-    //AppDelegate* delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    //if ([delegate isInternetReachable] == NO)
-    {
-        // HACK HACK HACK
-        // update first table item to show failure
-        // will try again when internet is reachable
-        //return;
-    }
-    */
+
     // mark as processing
     self.processingAddressQueue = YES;
     
     // find the next address to process
     NSString* address = self.addresses.lastObject;
-    
-	// HACK HACK HACK
-	// add optional first and last names
+
     // build a request dictionary
     // this will use the last address in the list
     NSDictionary* params = @{ @"id" : kChimpKitListID,
 							  @"email_address" : address,
 							  @"double_optin" : @"false",
 							  @"update_existing" : @"true" };
-	/*
-    [params setValue:kChimpKitListID forKey:@"id"];
-    [params setValue:address forKey:@"email_address"];
-    [params setValue:@"false" forKey:@"double_optin"];
-    [params setValue:@"true" forKey:@"update_existing"];
-    */
+
     // send off the request
     [ self.chimpKit callApiMethod: @"listSubscribe" withParams: params ];
     
@@ -243,15 +223,16 @@
 
 - (void) stopAddressQueue
 {
-	// HACK HACK HACK
-	// does the whole connection really need to be killed?
-    // kill the mailchimp connection
+	// close the chimp kit
     if (self.chimpKit != nil)
     {
         self.processingAddressQueue = NO;
         self.chimpKit.delegate = nil;
 		self.chimpKit = nil;
     }
+	
+	// save any remaining addresses
+	[ self saveAddresses ];
 }
 
 //------------------------------------------------------------------------------
@@ -297,6 +278,7 @@
     [ self.processedAddresses addObject: self.addresses.lastObject ];
     
     // remove the last address
+	// remember that the address are processed last to first
     [ self.addresses removeLastObject ];
     
     // update the table
@@ -312,6 +294,9 @@
 
 - (void) ckRequestFailed: (ChimpKit*) ckRequest andError: (NSError*) error
 {
+	// dump out the error
+	NSLog(@"ChimpKit request failed: %@", error.debugDescription);
+
     // mark as not processing
     self.processingAddressQueue = NO;
     

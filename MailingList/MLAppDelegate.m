@@ -68,7 +68,7 @@
 
 - (void) applicationDidEnterBackground: (UIApplication*) application
 {
-    [ self.viewController saveAddresses ];
+    [ self.viewController stopAddressQueue ];
     [ self.internetReachability stopNotifier ];
 }
 
