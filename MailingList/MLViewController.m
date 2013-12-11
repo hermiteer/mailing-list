@@ -189,6 +189,7 @@
     // nothing to do if no address left
     if ( self.addresses == nil || self.addresses.count == 0)
     {
+		self.processingAddressQueue = NO;
         [[ UIApplication sharedApplication ] setNetworkActivityIndicatorVisible: NO ];
         return;
     }
@@ -271,9 +272,6 @@
 
 - (void) ckRequestSucceeded: (ChimpKit*) ckRequest
 {
-    // mark as not processing
-    self.processingAddressQueue = NO;
-    
     // add the address to the processed list
     [ self.processedAddresses addObject: self.addresses.lastObject ];
     
