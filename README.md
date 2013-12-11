@@ -6,9 +6,9 @@ A non-commercial sample project for a simple MailChimp integrated mailing list a
 HOW TO USE
 ==========
 
-1)  Install the required ChimpKit source files by following ./ChimpKit/README.txt
-2)  Install the required Reachability source files by following ./Reachability/README.txt
-3)  Set your MailChimp API key, list ID, etc in ./MailingList/MLChimpKitKeys.h
+- Install the required ChimpKit source files by following ./ChimpKit/README.txt
+- Install the required Reachability source files by following ./Reachability/README.txt
+- Set your MailChimp API key, list ID, etc in ./MailingList/MLChimpKitKeys.h
 
 HOW TO CUSTOMIZE
 ================
